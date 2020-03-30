@@ -28,12 +28,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FlaskWebProject2\tests\test_basic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject2\tests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="FlaskWebProject2\__init__.py" />
     <Compile Include="FlaskWebProject2\views.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FlaskWebProject2\" />
+    <Folder Include="FlaskWebProject2\tests\" />
     <Folder Include="FlaskWebProject2\static\" />
     <Folder Include="FlaskWebProject2\static\content\" />
     <Folder Include="FlaskWebProject2\static\fonts\" />
