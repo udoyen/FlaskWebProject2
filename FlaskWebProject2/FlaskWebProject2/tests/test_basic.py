@@ -1,9 +1,9 @@
 import unittest
-import requests
 import FlaskWebProject2
 
 
 class TestBasic(unittest.TestCase):
+
     def setUp(self):
         FlaskWebProject2.app.testing = True
         self.app = FlaskWebProject2.app.test_client()
