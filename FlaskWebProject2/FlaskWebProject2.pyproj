@@ -49,6 +49,7 @@
     <Folder Include="FlaskWebProject2\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="FolderProfile.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="FlaskWebProject2\static\content\bootstrap.css" />
     <Content Include="FlaskWebProject2\static\content\bootstrap.min.css" />
@@ -88,7 +89,8 @@
       <Architecture>X64</Architecture>
     </Interpreter>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets"
+          Condition="'$(MSWebApplicationTargets)' != ''" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
        AfterBuild targets below. -->
   <Target Name="BeforeBuild">
