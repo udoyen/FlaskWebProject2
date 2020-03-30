@@ -90,7 +90,7 @@
     </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets"
-          Condition="'$(MSWebApplicationTargets)' != ''" />
+          Condition="'$(MSBuildExtensionsPath32)' != ''" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
        AfterBuild targets below. -->
   <Target Name="BeforeBuild">
